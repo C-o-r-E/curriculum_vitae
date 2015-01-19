@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/marked.js"></script>
+	<script type="text/javascript">
+$(document).ready(function () {
+	$.get("corey.md", function (data) {
+		$("#content").append(marked(data));
+	});
+});
+	</script>
+</head>
+<body>
+	<div id="content" class="container">
+	</div>
+</body>
+</html>
